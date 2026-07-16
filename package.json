@@ -1,41 +1,19 @@
 {
-  "name": "project_youtube_video_player",
+  "name": "keto-food-final",
   "version": "1.0.0",
-  "private": true,
-  "dependencies": {
-    "@emotion/react": "^11.10.0",
-    "@emotion/styled": "^11.10.0",
-    "@mui/icons-material": "^5.8.4",
-    "@mui/material": "^5.9.3",
-    "axios": "^0.27.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-player": "^2.10.1",
-    "react-router-dom": "^6.3.0",
-    "react-scripts": "^5.0.1"
-  },
+  "description": "A premium keto food delivery application built with React, Tailwind CSS, Node.js, Express, and MongoDB.",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "seed": "npm run seed --prefix server"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
   }
 }
